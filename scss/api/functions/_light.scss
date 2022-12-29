@@ -1,0 +1,7 @@
+// Light: Returns true if $color is light.
+
+@use "luminance" as *;
+
+@function light($color) {
+    @return if(luminance($color) > 0.5, true, false);
+}
