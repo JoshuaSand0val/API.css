@@ -7,8 +7,11 @@
 
 @mixin breakpoints($properties, $values...) {
     @for $i from 1 through LIST-length($values) {
-        @include min-vw(LIST-nth($breakpoints, $i)) {
-            @include declare($properties, LIST-nth($values, $i));
+        $value: LIST-nth($values, $i);
+        @if $value != null {
+            @include min-vw(LIST-nth($breakpoints, $i)) {
+                @include declare($properties, $value);
+            }
         }
     }
 }
