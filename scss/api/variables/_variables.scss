@@ -84,13 +84,15 @@ $vw-map: (
 $breakpoints: 0px, $sm, $md, $lg, $xl, $xxl !default;
 
 // Z-Index Position:
-$z-dropdown: 1000 !default;
-$z-sticky: 2000 !default;
-$z-fixed: 3000 !default;
-$z-modal-backdrop: 4000 !default;
-$z-modal: 5000 !default;
-$z-popover: 6000 !default;
-$z-tooltip: 7000 !default;
+$z-underlay: -1000 !default;
+$z-overlay: 1000 !default;
+$z-dropdown: 2000 !default;
+$z-sticky: 3000 !default;
+$z-fixed: 4000 !default;
+$z-backdrop: 5000 !default;
+$z-modal: 6000 !default;
+$z-popup: 7000 !default;
+$z-tooltip: 8000 !default;
 
 // Border Radius:
 $radius-xs: 4px !default;
