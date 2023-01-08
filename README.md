@@ -3,7 +3,7 @@
 **Add it to your project now via installation by NPM:**
 
 ```bash
-$ npm install api.css
+$ npm install api.css --save-dev
 ```
 
 ---
@@ -18,7 +18,7 @@ API.css is a modern CSS API, purpose built to streamline the creation of consist
 *If you are unfamiliar with NPM, here is an [installation guide](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
 
 ```bash
-$ npm install api.css
+$ npm install api.css --save-dev
 ```
 
 2. Make a new `api.scss` file and forward the package.  
