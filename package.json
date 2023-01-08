@@ -1,6 +1,6 @@
 {
 	"name": "api.css",
-	"version": "1.0.0-beta.0",
+	"version": "1.0.0-beta.1",
 	"description": "A modern CSS API built with SASS/SCSS.",
 	"keywords": [
 		"API.css",
@@ -20,6 +20,6 @@
 	"style": "scss/_index.scss",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/JoshuaSand0val/Neo-CSS.git"
+		"url": "git://github.com/JoshuaSand0val/API.css.git"
 	}
 }
