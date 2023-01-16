@@ -1,0 +1,8 @@
+// Font Size: Shorthand for setting font-size across the viewport breakpoints.
+
+@use "../functions/" as *;
+@use "breakpoints" as *;
+
+@mixin font-size($values...) {
+	@include breakpoints(font-size, font-size($values...)...);
+}
