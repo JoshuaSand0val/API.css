@@ -3,6 +3,6 @@
 @use "../variables/" as *;
 @use "step" as *;
 
-@function font-size($step) {
-    @return step($font-size, $font-size-ratio, $step);
+@function font-size($step...) {
+    @return step($font-size, $font-size-ratio, $step...);
 }

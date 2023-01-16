@@ -2,6 +2,11 @@
 
 @use "../sass" as *;
 
-@function step($value, $ratio, $step) {
-    @return $value * MATH-pow($ratio, $step);
+@function step($value, $ratio, $step...) {
+	@for $n from 1 through LIST-length($step) {
+		$step: LIST-set-nth($step, $n, 
+			$value * MATH-pow($ratio, LIST-nth($step, $n)
+		));
+	}
+	@return $step;
 }
