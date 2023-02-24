@@ -2,6 +2,8 @@
 
 @mixin declare($properties, $value) {
     @each $property in $properties {
-        #{$property}: $value;
+        @if $property and $value != null {
+            #{$property}: $value;
+        }
     }
 }
