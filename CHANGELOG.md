@@ -2,6 +2,22 @@
 
 All relevant changes to API.css will be documented here.
 
+## [1.0.0-beta.2] - 2023-03-04
+
+### Added
+
+- Added `font-size` shorthand mixin for setting typography size across viewport breakpoints.
+- Added `@content` block support to `breakpoints` mixin.
+- Added functionality to `shade` and `tint` functions. They now can accept an integer for `$perc` to multiply their output by a fixed `$color-shift` percentage value.
+
+### Changed
+
+- Changed `color-shift` function to use `luminance` (opposed to SASS `lightness` function).
+
+### Fixed
+
+- Fixed `declare` mixin from outputting `null` properties.
+
 ## [1.0.0-beta.1] - 2023-01-08
 
 ### Added
@@ -23,5 +39,6 @@ All relevant changes to API.css will be documented here.
 
 - Initial beta release (cloned from Neo CSS preview branch).
 
+[1.0.0-beta.2]: https://github.com/JoshuaSand0val/API.css/releases/tag/v1.0.0-beta.2
 [1.0.0-beta.1]: https://github.com/JoshuaSand0val/API.css/releases/tag/v1.0.0-beta.1
 [1.0.0-beta.0]: https://github.com/JoshuaSand0val/API.css/releases/tag/v1.0.0-beta.0
