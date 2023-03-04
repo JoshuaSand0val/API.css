@@ -1,5 +1,7 @@
 // Variables: All global API variables.
 
+@use "../sass" as *;
+
 // Color Palette:
 $white: #f6f6f8 !default;
 $black: #18181C !default;
@@ -36,6 +38,10 @@ $colors: (
 // Color Schemes:
 $color-scheme: light dark !default;
 $background-color: $white, dark $black !default;
+
+// Color Shift Percentage:
+$color-shift: 2.5% !default;
+$color-shift: MATH-abs($color-shift);
 
 // Contrast Ratio:
 $contrast-text-ratio: 4.5 !default;
