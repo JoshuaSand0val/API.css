@@ -1,6 +1,6 @@
 {
 	"name": "api.css",
-	"version": "1.0.0-beta.1",
+	"version": "1.0.0-beta.2",
 	"description": "A modern CSS API built with SASS/SCSS.",
 	"keywords": [
 		"API.css",
@@ -8,7 +8,7 @@
 		"SCSS",
 		"CSS"
 	],
-	"homepage": "https://joshuasand0val.github.io/Neo-CSS/",
+	"homepage": "https://github.com/JoshuaSand0val/API.css#readme",
 	"license": "MIT",
 	"author": "Joshua Elijah Sandoval",
 	"files": [
