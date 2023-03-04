@@ -6,12 +6,11 @@
 @use "min-vw" as *;
 
 @mixin breakpoints($properties, $values...) {
-    @for $i from 1 through LIST-length($values) {
-        $value: LIST-nth($values, $i);
-        @if $value != null {
-            @include min-vw(LIST-nth($breakpoints, $i)) {
-                @include declare($properties, $value);
-            }
+    $values: LIST-zip($breakpoints, $values);
+    @each $vw, $value in $values {
+        @include min-vw($vw) {
+            @include declare($properties, $value);
+            @content($value);
         }
     }
 }

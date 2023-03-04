@@ -1,0 +1,10 @@
+// Font Size: Shorthand for setting font-size across breakpoints.
+
+@use "../functions/" as *;
+@use "breakpoints" as *;
+
+@mixin font-size($values...) {
+	@include breakpoints(null, $values...) using ($size) {
+		font-size: font-size($size);
+	}
+}
