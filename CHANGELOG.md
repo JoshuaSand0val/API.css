@@ -2,6 +2,19 @@
 
 All relevant changes to API.css will be documented here.
 
+## [1.0.0-beta.3] - 2023-03-10
+
+### Added
+
+- Added root `_index.scss` as an accessible entry point into API.css.
+- Added `size` shorthand mixin for using the `size()` function across breakpoints.
+- Added `prefers-motion` media query mixin for when the user requests motion.
+
+### Changed
+
+- Changed `font-size` mixin parameter name from `$values` to intended `$steps`.
+- Changed `breakpoints` mixin by removing `$properties`, and to only accept `$values`.
+
 ## [1.0.0-beta.2] - 2023-03-04
 
 ### Added
@@ -39,6 +52,7 @@ All relevant changes to API.css will be documented here.
 
 - Initial beta release (cloned from Neo CSS preview branch).
 
+[1.0.0-beta.3]: https://github.com/JoshuaSand0val/API.css/releases/tag/v1.0.0-beta.3
 [1.0.0-beta.2]: https://github.com/JoshuaSand0val/API.css/releases/tag/v1.0.0-beta.2
 [1.0.0-beta.1]: https://github.com/JoshuaSand0val/API.css/releases/tag/v1.0.0-beta.1
 [1.0.0-beta.0]: https://github.com/JoshuaSand0val/API.css/releases/tag/v1.0.0-beta.0
