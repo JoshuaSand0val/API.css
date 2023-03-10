@@ -2,7 +2,6 @@
 
 @use "../variables/" as *;
 @use "../sass" as *;
-@use "declare" as *;
 @use "min-vw" as *;
 
 @mixin breakpoints($values...) {
