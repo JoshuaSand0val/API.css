@@ -5,11 +5,10 @@
 @use "declare" as *;
 @use "min-vw" as *;
 
-@mixin breakpoints($properties, $values...) {
+@mixin breakpoints($values...) {
     $values: LIST-zip($breakpoints, $values);
     @each $vw, $value in $values {
         @include min-vw($vw) {
-            @include declare($properties, $value);
             @content($value);
         }
     }

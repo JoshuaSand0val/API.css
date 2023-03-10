@@ -4,7 +4,7 @@
 @use "breakpoints" as *;
 
 @mixin font-size($steps...) {
-	@include breakpoints(null, $steps...) using ($step) {
+	@include breakpoints($steps...) using ($step) {
 		font-size: font-size($step);
 	}
 }
