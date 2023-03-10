@@ -1,0 +1,7 @@
+// Prefers Motion: A query for when the user requests motion.
+
+@mixin prefers-motion {
+    @media not (prefers-reduced-motion: reduce) {
+        @content;
+    }
+}
