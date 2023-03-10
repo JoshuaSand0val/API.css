@@ -3,8 +3,8 @@
 @use "../functions/" as *;
 @use "breakpoints" as *;
 
-@mixin font-size($values...) {
-	@include breakpoints(null, $values...) using ($size) {
-		font-size: font-size($size);
+@mixin font-size($steps...) {
+	@include breakpoints(null, $steps...) using ($step) {
+		font-size: font-size($step);
 	}
 }
