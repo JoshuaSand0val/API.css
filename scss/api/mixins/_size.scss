@@ -1,0 +1,10 @@
+// Size: Shorthand for using the `size()` function across breakpoints.
+
+@use "../functions/" as *;
+@use "breakpoints" as *;
+
+@mixin size($steps...) {
+    @include breakpoints($steps...) using ($step) {
+        @content(size($step));
+    }
+}
