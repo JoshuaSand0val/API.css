@@ -1,6 +1,6 @@
 {
 	"name": "api.css",
-	"version": "1.0.0-beta.2",
+	"version": "1.0.0-beta.3",
 	"description": "A modern CSS API built with SASS/SCSS.",
 	"keywords": [
 		"API.css",
@@ -13,6 +13,8 @@
 	"author": "Joshua Elijah Sandoval",
 	"files": [
 		"scss",
+		"_index.scss",
+		"CHANGELOG.md",
 		"LICENSE",
 		"README.md"
 	],
