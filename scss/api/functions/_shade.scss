@@ -1,11 +1,11 @@
-// Shade: Darkens $color by $perc, or $color-shift multiplier.
+// Shade: Darkens $color by $amount. A percentage, or a $color-shift multiplier.
 
 @use "../variables/" as *;
 @use "../sass" as *;
 
-@function shade($color, $perc) {
-    @if MATH-is-unitless($perc) {
-        $perc: MATH-clamp(-100%, $color-shift * $perc, 100%);
+@function shade($color, $amount) {
+    @if MATH-is-unitless($amount) {
+        $amount: MATH-clamp(-100%, $color-shift * $amount, 100%);
     }
-    @return COLOR-adjust($color, $lightness: -$perc);
+    @return COLOR-adjust($color, $lightness: -$amount);
 }

@@ -1,11 +1,7 @@
-// Tint: Lightens $color by $perc, or $color-shift multiplier.
+// Tint: Lightens $color by $amount. A percentage, or a $color-shift multiplier.
 
-@use "../variables/" as *;
-@use "../sass" as *;
+@use "shade" as *;
 
-@function tint($color, $perc) {
-    @if MATH-is-unitless($perc) {
-        $perc: MATH-clamp(-100%, $color-shift * $perc, 100%);
-    }
-    @return COLOR-adjust($color, $lightness: +$perc);
+@function tint($color, $amount) {
+    @return shade($color, -$amount);
 }

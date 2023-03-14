@@ -1,7 +1,11 @@
-// Tone: Grays $color by $perc.
+// Tone: Grays $color by $amount. A percentage, or a $color-shift multiplier.
 
+@use "../variables/" as *;
 @use "../sass" as *;
 
-@function tone($color, $perc) {
-    @return COLOR-mix(#808080, $color, $weight: $perc);
+@function tone($color, $amount) {
+    @if MATH-is-unitless($amount) {
+        $amount: MATH-min($color-shift * $amount, 100%);
+    }
+    @return COLOR-mix(#808080, $color, $weight: $amount);
 }
