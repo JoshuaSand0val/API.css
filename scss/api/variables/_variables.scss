@@ -35,6 +35,10 @@ $colors: (
     "pink": $pink
 ) !default;
 
+// Accent Color:
+$accent: $blue !default;
+$accent: MAP-get($colors, $accent) or $accent;
+
 // Color Schemes:
 $color-scheme: light dark !default;
 $background-color: $white, dark $black !default;
