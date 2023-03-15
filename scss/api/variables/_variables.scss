@@ -112,6 +112,14 @@ $radius-lg: 18px !default;
 $radius-xl: 24px !default;
 $radius-xxl: 32px !default;
 
+// Timing Lengths:
+$time-xs: 150ms !default;
+$time-sm: 300ms !default;
+$time-md: 500ms !default;
+$time-lg: 750ms !default;
+$time-xl: 1s !default;
+$time-xxl: 1.5s !default;
+
 // Safe Areas:
 $safe-top: env(safe-area-inset-top) !default;
 $safe-right: env(safe-area-inset-right) !default;
