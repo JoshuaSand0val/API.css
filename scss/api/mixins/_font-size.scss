@@ -1,10 +1,16 @@
 // Font Size: Shorthand for setting font-size across breakpoints.
 
 @use "../functions/" as *;
+@use "../sass" as *;
 @use "breakpoints" as *;
 
 @mixin font-size($steps...) {
 	@include breakpoints($steps...) using ($step) {
-		font-size: font-size($step);
+		@content(font-size($step));
+	}
+	@if not META-content-exists() {
+		@include font-size($steps...) using ($size) {
+			font-size: $size;
+		}
 	}
 }

@@ -35,6 +35,10 @@ $colors: (
     "pink": $pink
 ) !default;
 
+// Accent Color:
+$accent: $blue !default;
+$accent: MAP-get($colors, $accent) or $accent;
+
 // Color Schemes:
 $color-scheme: light dark !default;
 $background-color: $white, dark $black !default;
@@ -53,7 +57,7 @@ $scale-ratio: 1.414 !default;
 
 // Font Sizing:
 $font-size: 1em !default;
-$font-size-ratio: 1.200 !default;
+$font-size-ratio: 1.250 !default;
 
 // Font Family:
 $font: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
@@ -107,6 +111,14 @@ $radius-md: 12px !default;
 $radius-lg: 18px !default;
 $radius-xl: 24px !default;
 $radius-xxl: 32px !default;
+
+// Timing Lengths:
+$time-xs: 150ms !default;
+$time-sm: 300ms !default;
+$time-md: 500ms !default;
+$time-lg: 750ms !default;
+$time-xl: 1s !default;
+$time-xxl: 1.5s !default;
 
 // Safe Areas:
 $safe-top: env(safe-area-inset-top) !default;

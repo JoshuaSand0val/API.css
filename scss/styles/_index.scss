@@ -1,0 +1,73 @@
+// Styles: API derived styles for HTML elements.
+
+@use "../api/" as *;
+
+:where(*, ::before, ::after) {
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+:where(html) {
+	color-scheme: $color-scheme;
+	font-family: $font;
+	font-weight: $weight;
+	line-height: $line-height;
+	word-break: break-word;
+	@include font-size(-1, 0);
+	@include background-color using ($bg) {
+		background-color: $bg;
+		color: text-color($color2: $bg);
+	}
+	@include prefers-motion {
+		scroll-behavior: smooth;
+	}
+}
+
+:where(body) {
+	margin: 0;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+	font-family: $font-heading;
+	font-weight: $weight-bold;
+	line-height: $line-height-heading;
+	margin: size(-1) 0;
+}
+
+:where(h1) {
+	@include font-size(3);
+}
+
+:where(h2) {
+	@include font-size(2);
+}
+
+:where(h3) {
+	@include font-size(1);
+}
+
+:where(h4) {
+	@include font-size(0);
+}
+
+:where(h5, sub, sup, small) {
+	@include font-size(-1);
+}
+
+:where(h6) {
+	@include font-size(-2);
+}
+
+:where(b, strong) {
+	font-weight: $weight-bold;
+}
+
+:where(code, samp, pre, kbd) {
+	font-family: $font-mono;
+}
+
+@include background-color using ($bg) {
+	:where(a[href]) {
+		color: text-color($accent, $bg);
+	}
+}
