@@ -2,6 +2,22 @@
 
 All relevant changes to API.css will be documented here.
 
+## [1.0.0-beta.4] - 2023-03-15
+
+### Added
+
+- Added `$color-shift` multiplying integer syntax to `tone` function.
+- Added `@content` block support to `font-size` mixin.
+- Added `state` mixin that includes `$true` and/or `$false` state for a given `$selector`.
+- Added `$accent` color variable default.
+- Added optional `/scss/styles/` stylesheet that brings over API defaults to HTML elements, as well as useful defaults to preserve page responsiveness.
+- Added `$time-xs`, `$time-sm`, `$time-md`, `$time-lg`, `$time-xl` and `$time-xxl` variable defaults for transitions/animations.
+
+### Changed
+
+- Changed `$perc` syntax of `shade` and `tint` functions to `$amount`.
+- Changed `$font-size-ratio` default to `1.250` from `1.200`.
+
 ## [1.0.0-beta.3] - 2023-03-10
 
 ### Added
@@ -52,6 +68,7 @@ All relevant changes to API.css will be documented here.
 
 - Initial beta release (cloned from Neo CSS preview branch).
 
+[1.0.0-beta.4]: https://github.com/JoshuaSand0val/API.css/releases/tag/v1.0.0-beta.4
 [1.0.0-beta.3]: https://github.com/JoshuaSand0val/API.css/releases/tag/v1.0.0-beta.3
 [1.0.0-beta.2]: https://github.com/JoshuaSand0val/API.css/releases/tag/v1.0.0-beta.2
 [1.0.0-beta.1]: https://github.com/JoshuaSand0val/API.css/releases/tag/v1.0.0-beta.1
