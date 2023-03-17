@@ -7,12 +7,13 @@
 	max-width: 100%;
 }
 
-:where(html) {
+:where(body) {
 	color-scheme: $color-scheme;
 	font-family: $font;
 	font-weight: $weight;
 	line-height: $line-height;
 	word-break: break-word;
+	margin: 0;
 	@include font-size(-1, 0);
 	@include background-color using ($bg) {
 		background-color: $bg;
@@ -21,10 +22,6 @@
 	@include prefers-motion {
 		scroll-behavior: smooth;
 	}
-}
-
-:where(body) {
-	margin: 0;
 }
 
 :where(h1, h2, h3, h4, h5, h6) {
