@@ -1,5 +1,6 @@
 // Styles: API derived styles for HTML elements.
 
+@forward "../api/";
 @use "../api/" as *;
 
 :where(*, ::before, ::after) {
