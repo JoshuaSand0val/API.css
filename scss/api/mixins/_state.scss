@@ -1,6 +1,10 @@
 // State: Includes $true and/or $false state for a given $selector.
 
 @mixin state($selector, $true: null, $false: null) {
-	@content($selector, $true);
-	@content(":not(#{$selector})", $false);
+	#{$selector} {
+		@content($true);
+		:not(&) {
+			@content($false);
+		}
+	}
 }
