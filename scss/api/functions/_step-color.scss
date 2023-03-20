@@ -5,5 +5,5 @@
 @use "accessible" as *;
 
 @function step-color($color, $step, $ratio: $contrast-step-ratio) {
-    @return accessible($color, $color, MATH-pow($ratio, $step));
+	@return accessible($color, $color, MATH-pow($ratio, $step));
 }

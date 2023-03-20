@@ -1,12 +1,12 @@
 // Min-Viewport Height: A query for a minimum viewport height.
 
 @mixin min-vh($vh) {
-    @if $vh != none and $vh > 0 {
-        @media (min-height: $vh) {
-            @content;
-        }
-    }
-    @else {
-        @content;
-    }
+	@if $vh != none and $vh > 0 {
+		@media (min-height: $vh) {
+			@content;
+		}
+	}
+	@else {
+		@content;
+	}
 }

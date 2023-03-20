@@ -3,5 +3,5 @@
 @use "../sass" as *;
 
 @function step($value, $ratio, $step) {
-    @return $value * MATH-pow($ratio, $step);
+	@return $value * MATH-pow($ratio, $step);
 }

@@ -1,9 +1,9 @@
 // Declare: Set multiple $properties to $value.
 
 @mixin declare($properties, $value) {
-    @each $property in $properties {
-        @if $property and $value != null {
-            #{$property}: $value;
-        }
-    }
+	@each $property in $properties {
+		@if $property and $value != null {
+			#{$property}: $value;
+		}
+	}
 }

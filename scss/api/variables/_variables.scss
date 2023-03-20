@@ -19,20 +19,20 @@ $indigo: #9892C8 !default;
 $pink: #F47C98 !default;
 
 $colors: (
-    "white": $white,
-    "black": $black,
-    "gray": $gray,
-    "red": $red,
-    "orange": $orange,
-    "yellow": $yellow,
-    "brown": $brown,
-    "green": $green,
-    "blue": $blue,
-    "teal": $teal,
-    "cyan": $cyan,
-    "purple": $purple,
-    "indigo": $indigo,
-    "pink": $pink
+	"white": $white,
+	"black": $black,
+	"gray": $gray,
+	"red": $red,
+	"orange": $orange,
+	"yellow": $yellow,
+	"brown": $brown,
+	"green": $green,
+	"blue": $blue,
+	"teal": $teal,
+	"cyan": $cyan,
+	"purple": $purple,
+	"indigo": $indigo,
+	"pink": $pink
 ) !default;
 
 // Accent Color:
@@ -86,8 +86,8 @@ $xl: 1280.5px !default;
 $xxl: 1440.5px !default;
 
 $viewports: (
-    "xs": $xs, "sm": $sm, "md": $md,
-    "lg": $lg, "xl": $xl, "xxl": $xxl
+	"xs": $xs, "sm": $sm, "md": $md,
+	"lg": $lg, "xl": $xl, "xxl": $xxl
 ) !default;
 
 // Viewport Breakpoints:

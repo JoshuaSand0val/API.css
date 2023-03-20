@@ -1,12 +1,12 @@
 // Min-Viewport Width: A query for a minimum viewport width.
 
 @mixin min-vw($vw) {
-    @if $vw != none and $vw > 0 {
-        @media (min-width: $vw) {
-            @content;
-        }
-    }
-    @else {
-        @content;
-    }
+	@if $vw != none and $vw > 0 {
+		@media (min-width: $vw) {
+			@content;
+		}
+	}
+	@else {
+		@content;
+	}
 }

@@ -4,7 +4,7 @@
 @use "color-schemes" as *;
 
 @mixin background-color {
-    @include color-schemes($background-color...) using ($bg) {
-        @content($bg);
-    }
+	@include color-schemes($background-color...) using ($bg) {
+		@content($bg);
+	}
 }

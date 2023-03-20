@@ -5,8 +5,8 @@
 @use "tint" as *;
 
 @function color-shift($color, $amount) {
-    @if light($color) {
-        @return shade($color, $amount);
-    }
-    @return tint($color, $amount);
+	@if light($color) {
+		@return shade($color, $amount);
+	}
+	@return tint($color, $amount);
 }

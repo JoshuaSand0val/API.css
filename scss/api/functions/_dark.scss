@@ -3,5 +3,5 @@
 @use "luminance" as *;
 
 @function dark($color) {
-    @return if(luminance($color) <= 0.5, true, false);
+	@return if(luminance($color) <= 0.5, true, false);
 }

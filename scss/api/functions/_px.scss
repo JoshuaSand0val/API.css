@@ -3,5 +3,5 @@
 @use "../sass" as *;
 
 @function px($value) {
-    @return MATH-div($value, 16) * 1rem;
+	@return MATH-div($value, 16) * 1rem;
 }

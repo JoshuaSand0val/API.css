@@ -4,8 +4,8 @@
 @use "../sass" as *;
 
 @function shade($color, $amount) {
-    @if MATH-is-unitless($amount) {
-        $amount: MATH-clamp(-100%, $color-shift * $amount, 100%);
-    }
-    @return COLOR-adjust($color, $lightness: -$amount);
+	@if MATH-is-unitless($amount) {
+		$amount: MATH-clamp(-100%, $color-shift * $amount, 100%);
+	}
+	@return COLOR-adjust($color, $lightness: -$amount);
 }
