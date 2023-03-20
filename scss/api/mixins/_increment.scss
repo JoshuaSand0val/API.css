@@ -1,0 +1,9 @@
+// Increment: Increments $default by the index of each selector within $selectors.
+
+@use "decrement" as *;
+
+@mixin increment($default, $selectors...) {
+	@include decrement($default, $selectors...) using ($value) {
+		@content(($default * 2) - $value);
+	}
+}
