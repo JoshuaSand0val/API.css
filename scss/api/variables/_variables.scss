@@ -33,7 +33,7 @@ $colors: (
 	"purple": $purple,
 	"indigo": $indigo,
 	"pink": $pink
-) !default;
+);
 
 // Accent Color:
 $accent: $blue !default;
@@ -88,10 +88,10 @@ $xxl: 1440.5px !default;
 $viewports: (
 	"xs": $xs, "sm": $sm, "md": $md,
 	"lg": $lg, "xl": $xl, "xxl": $xxl
-) !default;
+);
 
 // Viewport Breakpoints:
-$breakpoints: 0px, $sm, $md, $lg, $xl, $xxl !default;
+$breakpoints: 0px, $sm, $md, $lg, $xl, $xxl;
 
 // Z-Index Position:
 $z-underlay: -1000 !default;
