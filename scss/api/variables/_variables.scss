@@ -17,6 +17,7 @@ $cyan: #6bcee7 !default;
 $purple: #b350ed !default;
 $indigo: #9892C8 !default;
 $pink: #F47C98 !default;
+$accent: $blue !default;
 
 $colors: (
 	"white": $white,
@@ -32,13 +33,12 @@ $colors: (
 	"cyan": $cyan,
 	"purple": $purple,
 	"indigo": $indigo,
-	"pink": $pink
+	"pink": $pink,
+	"accent": $accent
 );
 
-// Color Schemes:
+// Primary (Background) Color:
 $primary-color: $white, dark $black !default;
-$secondary-color: $black, dark $white !default;
-$accent: $blue !default;
 
 // Scaling Properties:
 $scale-baseline: 1rem !default;
