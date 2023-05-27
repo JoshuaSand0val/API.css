@@ -1,10 +1,15 @@
 // Color Schemes: Builds scheme queries using different $schemes and a $default.
 
+@use "../variables/" as *;
+@use "../sass" as *;
+
 @mixin color-schemes($default, $schemes...) {
 	@content($default);
 	@each $mode, $color in $schemes {
-		@media (prefers-color-scheme: $mode) {
-			@content($color);
+		@if LIST-index($color-schemes, $mode) {
+			@media (prefers-color-scheme: $mode) {
+				@content($color);
+			}
 		}
 	}
 }

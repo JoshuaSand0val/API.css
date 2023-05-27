@@ -9,7 +9,7 @@
 }
 
 :where(body) {
-	color-scheme: light dark;
+	color-scheme: $color-schemes;
 	font-family: $font;
 	font-weight: $weight;
 	line-height: $line-height;

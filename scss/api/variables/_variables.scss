@@ -37,6 +37,9 @@ $colors: (
 	"accent": $accent
 );
 
+// Supported Color Schemes:
+$color-schemes: light dark !default;
+
 // Primary (Background) Color:
 $primary-color: $white, dark $black !default;
 
