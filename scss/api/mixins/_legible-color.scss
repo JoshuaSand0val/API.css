@@ -1,0 +1,10 @@
+// Legible Color: Adjusts $color1 contrast to be legible on $color2.
+
+@use "../functions/" as *;
+
+@mixin legible-color($color1, $color2) {
+	@content(accessible($color1, $color2, 4.5));
+	@media (prefers-contrast: more) {
+		@content(accessible($color1, $color2, 7));
+	}
+}
