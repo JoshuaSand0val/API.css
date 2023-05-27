@@ -9,16 +9,16 @@
 }
 
 :where(body) {
-	color-scheme: $color-scheme;
+	color-scheme: light dark;
 	font-family: $font;
 	font-weight: $weight;
 	line-height: $line-height;
 	word-break: break-word;
 	margin: 0;
 	@include font-size(-1, 0);
-	@include background-color using ($bg) {
-		background-color: $bg;
-		color: text-color($color2: $bg);
+	@include primary-color using ($primary) {
+		background-color: $primary;
+		color: color-shift($primary, 1000);
 	}
 	@include prefers-motion {
 		scroll-behavior: smooth;
@@ -64,8 +64,10 @@
 	font-family: $font-mono;
 }
 
-@include background-color using ($bg) {
-	:where(a[href]) {
-		color: text-color($accent, $bg);
+:where(a[href]) {
+	@include primary-color using ($primary) {
+		@include legible-color($accent, $primary) using ($color) {
+			color: $color;
+		}
 	}
 }
