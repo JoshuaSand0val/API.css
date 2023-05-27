@@ -40,10 +40,6 @@ $primary-color: $white, dark $black !default;
 $secondary-color: $black, dark $white !default;
 $accent: $blue !default;
 
-// Color Shift Percentage:
-$color-shift: 2.5% !default;
-$color-shift: MATH-abs($color-shift);
-
 // Contrast Ratio:
 $contrast-text-ratio: 4.5 !default;
 $contrast-step-ratio: 1.1 !default;
