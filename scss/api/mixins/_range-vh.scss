@@ -4,9 +4,9 @@
 @use "min-vh" as *;
 
 @mixin range-vh($min-vh, $max-vh) {
-    @include min-vh($min-vh) {
-        @include max-vh($max-vh) {
-            @content;
-        }
-    }
+	@include min-vh($min-vh) {
+		@include max-vh($max-vh) {
+			@content;
+		}
+	}
 }

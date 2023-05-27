@@ -4,9 +4,9 @@
 @use "min-vw" as *;
 
 @mixin range-vw($min-vw, $max-vw) {
-    @include min-vw($min-vw) {
-        @include max-vw($max-vw) {
-            @content;
-        }
-    }
+	@include min-vw($min-vw) {
+		@include max-vw($max-vw) {
+			@content;
+		}
+	}
 }

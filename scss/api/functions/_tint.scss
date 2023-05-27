@@ -1,7 +1,7 @@
-// Tint: Lightens $color by $amount. A percentage, or a $color-shift multiplier.
+// Tint: Lightens $color by $weight.
 
 @use "shade" as *;
 
-@function tint($color, $amount) {
-    @return shade($color, -$amount);
+@function tint($color, $weight) {
+	@return shade($color, -$weight);
 }

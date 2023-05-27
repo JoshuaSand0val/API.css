@@ -10,6 +10,8 @@ $ npm install api.css --save-dev
 
 ## What is API.css?
 API.css is a modern CSS API, purpose built to streamline the creation of consistent CSS.
+It provides SASS/SCSS tools for easily recreating accessible colors, consistent typography and margin ladders,
+predefined viewport breakpoints, and various more tools for scaling your project across different devices and scenarios.
 
 ## Get started using API.css
 ### Getting started is easy! Just complete a few steps!

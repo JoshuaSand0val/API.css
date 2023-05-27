@@ -4,5 +4,5 @@
 @use "step" as *;
 
 @function font-size($step) {
-    @return step($font-size, $font-size-ratio, $step);
+	@return step($font-size, $font-size-ratio, $step);
 }

@@ -1,0 +1,10 @@
+// States: Spreads value $states across selectors, with a $default.
+
+@mixin states($default, $states...) {
+	@content($default);
+	@each $selector, $value in $states {
+		&:is(#{$selector}) {
+			@content($value);
+		}
+	}
+}

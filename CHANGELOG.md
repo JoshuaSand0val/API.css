@@ -2,6 +2,36 @@
 
 All relevant changes to API.css will be documented here.
 
+## [1.0.0-beta.5] - 2023-05-27
+
+### Added
+
+- Added API forward in optional starter stylesheet.
+- Added `states` mixin to spread values across selectors.
+- Added `color-weight` function to weight color lightness.
+- Added `$primary-color` variable, and `primary-color` mixin.
+- Added `legible-color` mixin for setting type color.
+- Added `accent` to `$colors` map.
+
+### Changed
+
+- Changed starter stylesheet in moving html properties into body. This allows the styles to be wrapped in a class for CSS modules support, if needed.
+- Changed `color-shift`, `shade` and `tint` functions syntax from percentages to color weights.
+- Changed `$color-scheme` variable name to `$color-schemes`.
+- Changed optional starter stylesheet to use new color mixins.
+- Changed `color-schemes` mixin functionality to omit its output based off its corresponding `$color-schemes` variable.
+
+### Removed
+
+- Removed inset mixin in favor of the native CSS property instead.
+- Removed `state` mixin in favor of new `states` mixin.
+- Removed `!default` configuration on `$colors`, `$viewports` and `$breakpoints`.
+- Removed `$background-color` variable and `background-color` mixin.
+- Removed `$color-shift` percentage variable.
+- Removed `step-color` function and `$contrast-step-ratio` variable.
+- Removed `text-color` function and `$contrast-text-ratio` variable.
+- Removed `tone` function.
+
 ## [1.0.0-beta.4] - 2023-03-15
 
 ### Added
@@ -68,6 +98,7 @@ All relevant changes to API.css will be documented here.
 
 - Initial beta release (cloned from Neo CSS preview branch).
 
+[1.0.0-beta.5]: https://github.com/JoshuaSand0val/API.css/releases/tag/v1.0.0-beta.5
 [1.0.0-beta.4]: https://github.com/JoshuaSand0val/API.css/releases/tag/v1.0.0-beta.4
 [1.0.0-beta.3]: https://github.com/JoshuaSand0val/API.css/releases/tag/v1.0.0-beta.3
 [1.0.0-beta.2]: https://github.com/JoshuaSand0val/API.css/releases/tag/v1.0.0-beta.2

@@ -4,5 +4,5 @@
 @use "step" as *;
 
 @function size($step) {
-    @return step($scale-baseline, $scale-ratio, $step);
+	@return step($scale-baseline, $scale-ratio, $step);
 }
