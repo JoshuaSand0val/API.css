@@ -35,13 +35,10 @@ $colors: (
 	"pink": $pink
 );
 
-// Accent Color:
-$accent: $blue !default;
-$accent: MAP-get($colors, $accent) or $accent;
-
 // Color Schemes:
-$color-scheme: light dark !default;
-$background-color: $white, dark $black !default;
+$primary-color: $white, dark $black !default;
+$secondary-color: $black, dark $white !default;
+$accent: $blue !default;
 
 // Color Shift Percentage:
 $color-shift: 2.5% !default;

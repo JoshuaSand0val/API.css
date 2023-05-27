@@ -1,0 +1,10 @@
+// Secondary Color: Shorthand for $secondary-color in color-schemes mixin.
+
+@use "../variables/" as *;
+@use "color-schemes" as *;
+
+@mixin secondary-color {
+	@include color-schemes($secondary-color...) using ($secondary) {
+		@content($secondary);
+	}
+}

@@ -1,5 +1,5 @@
 // Mixins: All API mixins forwarded.
-@forward "background-color";
+@forward "accent-color";
 @forward "breakpoints";
 @forward "color-schemes";
 @forward "dark";
@@ -13,8 +13,10 @@
 @forward "min-vh";
 @forward "min-vw";
 @forward "prefers-motion";
+@forward "primary-color";
 @forward "range-vh";
 @forward "range-vw";
 @forward "reduced-motion";
+@forward "secondary-color";
 @forward "size";
 @forward "states";

@@ -1,0 +1,10 @@
+// Accent Color: Shorthand for $accent in color-schemes mixin.
+
+@use "../variables/" as *;
+@use "color-schemes" as *;
+
+@mixin accent-color {
+	@include color-schemes($accent...) using ($accent-color) {
+		@content($accent-color);
+	}
+}
