@@ -66,8 +66,6 @@
 
 :where(a[href]) {
 	@include primary-color using ($primary) {
-		@include legible-color($accent, $primary) using ($color) {
-			color: $color;
-		}
+		@include legible-color($accent, $primary);
 	}
 }
