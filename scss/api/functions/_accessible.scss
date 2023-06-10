@@ -11,8 +11,8 @@
 	// Max ratio at maximum possible value:
 	$ratio: MATH-min($ratio, $ratio-max);
 
-	// If lighter color on background meets requirements easier:
-	$lighten: contrast(#FFF, $color2) > contrast(#000, $color2);
+	// If lighter color on background meets requirements:
+	$lighten: contrast(#FFF, $color2) >= $ratio;
 
 	// While ratio is too low; lighten or darken color:
 	@while contrast($color1, $color2) < $ratio {
