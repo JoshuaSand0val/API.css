@@ -3,7 +3,7 @@
 @use "../sass" as *;
 @use "contrast" as *;
 
-@function accessible($color1, $color2, $ratio)
+@function accessible($color1, $color2, $ratio: 7)
 {
 	// Get maximum ratio value:
 	$ratio-max: MATH-max(contrast(#FFF, $color2), contrast(#000, $color2));
@@ -17,10 +17,10 @@
 	// While ratio is too low; lighten or darken color:
 	@while contrast($color1, $color2) < $ratio {
 		@if $lighten {
-			$color1: COLOR-adjust($color1, $lightness: +2%);
+			$color1: COLOR-adjust($color1, $lightness: +1%);
 		}
 		@else {
-			$color1: COLOR-adjust($color1, $lightness: -2%);
+			$color1: COLOR-adjust($color1, $lightness: -1%);
 		}
 	}
 
