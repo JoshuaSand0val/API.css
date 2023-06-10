@@ -1,0 +1,22 @@
+// Fluid: Responsive pixel $start, $end viewport resizing.
+
+@use "../variables/" as *;
+@use "../sass" as *;
+
+@function fluid($start, $end) {
+	// Get $difference between $start and $end:
+	$difference: $end - $start;
+
+	// The $difference value is scaled to $xxl viewport:
+	$scale: MATH-div($difference, $xxl) * 100cqw;
+
+	// The $responsive value is $start combined with $scale:
+	$responsive: calc($start + $scale);
+
+	// Get $min and $max values from $start and $end:
+	$min: MATH-min($start, $end);
+	$max: MATH-max($start, $end);
+
+	// Return $responsive clamped $min, $max value:
+	@return clamp($min, $responsive, $max);
+}
