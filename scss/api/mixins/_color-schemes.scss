@@ -3,7 +3,7 @@
 @use "../variables/" as *;
 @use "../sass" as *;
 
-@mixin color-schemes($schemes: $primary-color) {
+@mixin color-schemes($schemes: (light: $light, dark: $dark)) {
 	@each $mode, $color in $schemes {
 		@if LIST-index($color-schemes, $mode) {
 			@media (prefers-color-scheme: $mode) {

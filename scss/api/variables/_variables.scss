@@ -1,7 +1,5 @@
 // Variables: All global API variables.
 
-@use "../sass" as *;
-
 // Color Palette:
 $white: #f6f6f8 !default;
 $black: #18181C !default;
@@ -17,7 +15,6 @@ $cyan: #6bcee7 !default;
 $purple: #b350ed !default;
 $indigo: #9892C8 !default;
 $pink: #F47C98 !default;
-$accent: $blue !default;
 
 $colors: (
 	"white": $white,
@@ -33,15 +30,30 @@ $colors: (
 	"cyan": $cyan,
 	"purple": $purple,
 	"indigo": $indigo,
-	"pink": $pink,
-	"accent": $accent
+	"pink": $pink
 );
 
-// Supported Color Schemes:
-$color-schemes: light dark !default;
+// Theme Colors:
+$accent: $blue !default;
+$error: $red !default;
+$warning: $yellow !default;
+$info: $cyan !default;
+$success: $green !default;
+$light: $white !default;
+$dark: $black !default;
 
-// Primary Color (Default Color Scheme):
-$primary-color: (light: $white, dark: $black) !default;
+$theme-colors: (
+	"accent": $accent,
+	"error": $error,
+	"warning": $warning,
+	"info": $info,
+	"success": $success,
+	"light": $light,
+	"dark": $dark
+);
+
+// Rendered Color Schemes:
+$color-schemes: light dark !default;
 
 // Scaling Properties:
 $scale-baseline: 1rem !default;
