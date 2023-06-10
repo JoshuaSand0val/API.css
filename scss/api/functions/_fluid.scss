@@ -1,14 +1,14 @@
-// Fluid: Responsive pixel $start, $end viewport resizing.
+// Fluid: Responsive pixel $start, $end $breakpoint resizing.
 
 @use "../variables/" as *;
 @use "../sass" as *;
 
-@function fluid($start, $end) {
+@function fluid($start, $end, $breakpoint: $xxl) {
 	// Get $difference between $start and $end:
 	$difference: $end - $start;
 
-	// The $difference value is scaled to $xxl viewport:
-	$scale: MATH-div($difference, $xxl) * 100cqw;
+	// The $difference value is scaled to the $breakpoint:
+	$scale: MATH-div($difference, $breakpoint) * 100cqw;
 
 	// The $responsive value is $start combined with $scale:
 	$responsive: calc($start + $scale);
