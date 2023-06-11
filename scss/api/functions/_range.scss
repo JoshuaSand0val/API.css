@@ -1,9 +1,9 @@
-// Fluid: Responsive pixel $start, $end $breakpoint resizing.
+// Range: Responsive $start, $end range $breakpoint resizing.
 
 @use "../variables/" as *;
 @use "../sass" as *;
 
-@function fluid($start, $end, $breakpoint: $xxl) {
+@function range($start, $end, $breakpoint: $xxl) {
 	// Get $difference between $start and $end:
 	$difference: $end - $start;
 
