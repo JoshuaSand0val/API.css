@@ -1,0 +1,8 @@
+// REM: Converts 'px' units into 'rem' units.
+
+@use "../sass" as *;
+@use "em" as *;
+
+@function rem($value) {
+	@return MATH-div(em($value), 1em) + 0rem;
+}

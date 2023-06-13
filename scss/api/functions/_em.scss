@@ -1,0 +1,8 @@
+// EM: Converts 'px' units into 'em' units.
+
+@use "../sass" as *;
+
+@function em($value) {
+	$divisor: if(MATH-is-unitless($value), 16, 16px);
+	@return MATH-div($value, $divisor) + 0em;
+}
