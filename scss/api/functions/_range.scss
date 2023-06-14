@@ -4,19 +4,16 @@
 @use "../sass" as *;
 
 @function range($start, $end, $breakpoint: $xxl) {
-	// Get $difference between $start and $end:
-	$difference: $end - $start;
-
-	// The $difference value is scaled to the $breakpoint:
-	$scale: MATH-div($difference, $breakpoint) * 100cqw;
-
-	// The $responsive value is $start combined with $scale:
-	$responsive: calc($start + $scale);
-
 	// Get $min and $max values from $start and $end:
 	$min: MATH-min($start, $end);
 	$max: MATH-max($start, $end);
 
-	// Return $responsive clamped $min, $max value:
-	@return clamp($min, $responsive, $max);
+	// Get $difference between $max and $min:
+	$difference: $max - $min;
+
+	// The $modifier value is $difference scaled to $breakpoint:
+	$modifier: MATH-div($difference, $breakpoint) * 100cqw;
+
+	// Return responsive $min, $max value range:
+	@return calc($min + $modifier);
 }
