@@ -15,5 +15,5 @@
 	$modifier: MATH-div($difference, $breakpoint) * 100cqw;
 
 	// Return responsive $min, $max value range:
-	@return calc($min + $modifier);
+	@return min($min + $modifier, $max);
 }
