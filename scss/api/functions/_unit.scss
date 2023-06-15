@@ -1,0 +1,12 @@
+// Unit: Returns compatible unit of $value from $units, or false.
+
+@use "../sass" as *;
+
+@function unit($value, $units...) {
+	@each $unit in $units {
+		@if MATH-compatible($value, $unit) {
+			@return $unit;
+		}
+	}
+	@return false;
+}
