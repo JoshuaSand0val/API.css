@@ -3,9 +3,9 @@
 @use "max-height" as *;
 @use "min-height" as *;
 
-@mixin range-height($min-height, $max-height) {
-	@include min-height($min-height) {
-		@include max-height($max-height) {
+@mixin range-height($min, $max) {
+	@include min-height($min) {
+		@include max-height($max) {
 			@content;
 		}
 	}

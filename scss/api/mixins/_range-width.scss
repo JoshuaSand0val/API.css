@@ -3,9 +3,9 @@
 @use "max-width" as *;
 @use "min-width" as *;
 
-@mixin range-width($min-width, $max-width) {
-	@include min-width($min-width) {
-		@include max-width($max-width) {
+@mixin range-width($min, $max) {
+	@include min-width($min) {
+		@include max-width($max) {
 			@content;
 		}
 	}
