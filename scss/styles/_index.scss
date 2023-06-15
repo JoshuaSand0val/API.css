@@ -10,12 +10,12 @@
 
 :where(body) {
 	color-scheme: $color-schemes;
+	font-size: size(0em);
 	font-family: $font;
 	font-weight: $weight;
 	line-height: $line-height;
 	word-break: break-word;
 	margin: 0;
-	@include font-size(-1, 0);
 	@include color-schemes using ($bg) {
 		background-color: $bg;
 		color: high-contrast($bg, $white, $black);
@@ -29,31 +29,31 @@
 	font-family: $font-heading;
 	font-weight: $weight-bold;
 	line-height: $line-height-heading;
-	margin: size(-1) 0;
+	margin: size(-1rem) 0;
 }
 
 :where(h1) {
-	@include font-size(3);
+	font-size: size(3em);
 }
 
 :where(h2) {
-	@include font-size(2);
+	font-size: size(2em);
 }
 
 :where(h3) {
-	@include font-size(1);
+	font-size: size(1em);
 }
 
 :where(h4) {
-	@include font-size(0);
+	font-size: size(0em);
 }
 
 :where(h5, sub, sup, small) {
-	@include font-size(-1);
+	font-size: size(-1em);
 }
 
 :where(h6) {
-	@include font-size(-2);
+	font-size: size(-2em);
 }
 
 :where(b, strong) {

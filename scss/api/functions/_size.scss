@@ -1,8 +1,19 @@
-// Size: Scales value based on $step.
+// Size: Responsive $step value using Minor Second and Golden Ratio.
 
-@use "../variables/" as *;
+@use "../sass" as *;
+@use "range" as *;
 @use "step" as *;
+@use "unit" as *;
 
 @function size($step) {
-	@return step($scale-baseline, $scale-ratio, $step);
+	// Get $baseline value compatible to $step:
+	$baseline: unit($step, 16px, 1rem, 1em);
+	// Strip unit off $step:
+	$step: MATH-div($step, $step * 0 + 1);
+	// The $min size is scaled to 1.067 (Minor Second):
+	$min: step($baseline, 1.067, $step);
+	// The $max size is scaled to 1.618 (Golden Ratio):
+	$max: step($baseline, 1.618, $step);
+	// Return $min, $max size range:
+	@return range($min, $max);
 }
