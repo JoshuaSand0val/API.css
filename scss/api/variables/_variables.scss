@@ -1,5 +1,8 @@
 // Variables: All global API variables.
 
+// Rendered Color Schemes:
+$color-schemes: light dark !default;
+
 // Color Palette:
 $white: #f6f6f8 !default;
 $black: #18181C !default;
@@ -52,9 +55,6 @@ $theme-colors: (
 	"dark": $dark
 );
 
-// Rendered Color Schemes:
-$color-schemes: light dark !default;
-
 // Scaling Properties:
 $scale-baseline: 1rem !default;
 $scale-ratio: 1.414 !default;
@@ -81,7 +81,7 @@ $weight-heavy: 800 !default;
 $line-height: 1.5 !default;
 $line-height-heading: 1.33 !default;
 
-// Viewport Widths:
+// Container Pixel Width:
 $xs: 180.5px !default;
 $sm: 300.5px !default;
 $md: 640.5px !default;
@@ -89,7 +89,7 @@ $lg: 980.5px !default;
 $xl: 1280.5px !default;
 $xxl: 1440.5px !default;
 
-$viewports: (
+$containers: (
 	"xs": $xs, "sm": $sm, "md": $md,
 	"lg": $lg, "xl": $xl, "xxl": $xxl
 );
