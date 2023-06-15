@@ -1,9 +1,11 @@
 // States: Spreads value $states across selectors, with a $default.
 
+@use "../sass" as *;
+
 @mixin states($default, $states...) {
 	@content($default);
 	@each $selector, $value in $states {
-		&:is(#{$selector}) {
+		@at-root #{SELECTOR-unify(&, $selector)} {
 			@content($value);
 		}
 	}
