@@ -1,0 +1,12 @@
+// Max Width: A query for a maximum container width.
+
+@mixin max-width($width) {
+	@if $width != none {
+		@container (max-width: #{$width}) {
+			@content;
+		}
+	}
+	@else {
+		@content;
+	}
+}

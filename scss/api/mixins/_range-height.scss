@@ -1,0 +1,12 @@
+// Range Height: A query for a ranging container height.
+
+@use "max-height" as *;
+@use "min-height" as *;
+
+@mixin range-height($min-height, $max-height) {
+	@include min-height($min-height) {
+		@include max-height($max-height) {
+			@content;
+		}
+	}
+}

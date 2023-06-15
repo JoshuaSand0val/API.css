@@ -1,13 +1,13 @@
-// Breakpoints: Spreads $values across the viewport breakpoints.
+// Breakpoints: Spreads $values across the container breakpoints.
 
 @use "../variables/" as *;
 @use "../sass" as *;
-@use "min-vw" as *;
+@use "min-width" as *;
 
 @mixin breakpoints($values...) {
 	$values: LIST-zip($breakpoints, $values);
-	@each $vw, $value in $values {
-		@include min-vw($vw) {
+	@each $width, $value in $values {
+		@include min-width($width) {
 			@content($value);
 		}
 	}

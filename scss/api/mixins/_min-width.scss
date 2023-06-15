@@ -1,0 +1,12 @@
+// Min Width: A query for a minimum container width.
+
+@mixin min-width($width) {
+	@if $width != none and $width > 0 {
+		@container (min-width: #{$width}) {
+			@content;
+		}
+	}
+	@else {
+		@content;
+	}
+}

@@ -1,0 +1,12 @@
+// Max Height: A query for a maximum container height.
+
+@mixin max-height($height) {
+	@if $height != none {
+		@container (max-height: #{$height}) {
+			@content;
+		}
+	}
+	@else {
+		@content;
+	}
+}

@@ -1,0 +1,12 @@
+// Range Width: A query for a ranging container width.
+
+@use "max-width" as *;
+@use "min-width" as *;
+
+@mixin range-width($min-width, $max-width) {
+	@include min-width($min-width) {
+		@include max-width($max-width) {
+			@content;
+		}
+	}
+}

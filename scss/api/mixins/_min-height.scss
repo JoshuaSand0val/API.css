@@ -1,0 +1,12 @@
+// Min Height: A query for a minimum container height.
+
+@mixin min-height($height) {
+	@if $height != none and $height > 0 {
+		@container (min-height: #{$height}) {
+			@content;
+		}
+	}
+	@else {
+		@content;
+	}
+}
