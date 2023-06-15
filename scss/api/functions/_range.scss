@@ -2,6 +2,9 @@
 
 @use "../variables/" as *;
 @use "../sass" as *;
+@use "em" as *;
+@use "rem" as *;
+@use "unit" as *;
 
 @function range($start, $end, $breakpoint: $xxl) {
 	// Get $min and $max values from $start and $end:
@@ -10,6 +13,10 @@
 
 	// Get $difference between $max and $min:
 	$difference: $max - $min;
+
+	// Set $breakpoint to $difference units:
+	$breakpoint: $breakpoint, em($breakpoint), rem($breakpoint);
+	$breakpoint: unit($difference, $breakpoint...);
 
 	// The $modifier value is $difference scaled to $breakpoint:
 	$modifier: MATH-div($difference, $breakpoint) * 100cqw;
