@@ -1,7 +1,12 @@
-// Light: Returns true if $color is light.
+// Light: Returns $color-list color that is light, otherwise null.
 
 @use "luminance" as *;
 
-@function light($color) {
-	@return if(luminance($color) > 0.5, true, false);
+@function light($color-list...) {
+	@each $color in $color-list {
+		@if luminance($color) > 0.5 {
+			@return $color;
+		}
+	}
+	@return null;
 }
