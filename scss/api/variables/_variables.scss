@@ -55,6 +55,14 @@ $theme-colors: (
 	"dark": $dark
 );
 
+// Color Contrast Ratios:
+$AA: 4.5;
+$AA-large: 3;
+$AAA: 7;
+$AAA-large: 4.5;
+$AA-gui: 3;
+$AA-ui: $AA-gui;
+
 // Font Family:
 $font: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
 helvetica neue, helvetica, Cantarell, Ubuntu, roboto,
