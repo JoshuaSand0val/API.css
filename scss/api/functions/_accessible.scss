@@ -1,21 +1,20 @@
-// Accessible: Adjusts contrast of $color1 to be contrast $ratio on $color2.
+// Accessible: Adjusts lightness of $color1 to be contrast $ratio on $color2.
 
 @use "../sass" as *;
-@use "contrast" as *;
+@use "contrast-ratio" as *;
 
-@function accessible($color1, $color2, $ratio: 7)
-{
-	// Get maximum ratio value:
-	$ratio-max: MATH-max(contrast(#FFF, $color2), contrast(#000, $color2));
-
+@function accessible($color1, $color2, $ratio: 7) {
 	// Max ratio at maximum possible value:
-	$ratio: MATH-min($ratio, $ratio-max);
+	$ratio: MATH-min($ratio, MATH-max(
+		contrast-ratio(#FFF, $color2),
+		contrast-ratio(#000, $color2)
+	));
 
 	// If lighter color on background meets requirements:
-	$lighten: contrast(#FFF, $color2) >= $ratio;
+	$lighten: contrast-ratio(#FFF, $color2) >= $ratio;
 
 	// While ratio is too low; lighten or darken color:
-	@while contrast($color1, $color2) < $ratio {
+	@while contrast-ratio($color1, $color2) < $ratio {
 		@if $lighten {
 			$color1: COLOR-adjust($color1, $lightness: +1%);
 		}

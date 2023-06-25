@@ -1,10 +1,10 @@
-// Contrast: Gets the contrast ratio between $color1 and $color2.
+// Contrast Ratio: Gets the contrast ratio between $color1 and $color2.
 // Based on https://www.w3.org/TR/WCAG20/#contrast-ratiodef
 
 @use "../sass" as *;
 @use "luminance" as *;
 
-@function contrast($color1, $color2)
+@function contrast-ratio($color1, $color2)
 {
 	// Get luminance of each color:
 	$color1: luminance($color1);

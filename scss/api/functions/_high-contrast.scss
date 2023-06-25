@@ -1,13 +1,13 @@
 // High Contrast: Returns $color-list color with highest contrast compared to $color.
 
 @use "../sass" as *;
-@use "contrast" as *;
+@use "contrast-ratio" as *;
 
 @function high-contrast($color, $color-list...) {
 	// Create list of contrast $ratios:
 	$ratios: ();
 	@each $comparison in $color-list {
-		$ratios: LIST-append($ratios, contrast($color, $comparison));
+		$ratios: LIST-append($ratios, contrast-ratio($color, $comparison));
 	}
 	// Get $index of highest contrasting color:
 	$index: LIST-index($ratios, MATH-max($ratios...));
