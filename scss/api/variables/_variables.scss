@@ -37,20 +37,22 @@ $colors: (
 );
 
 // Theme Colors:
-$accent: $blue !default;
-$error: $red !default;
+$primary: $blue !default;
+$secondary: $gray !default;
+$success: $green !default;
+$danger: $red !default;
 $warning: $yellow !default;
 $info: $cyan !default;
-$success: $green !default;
 $light: $white !default;
 $dark: $black !default;
 
 $theme-colors: (
-	"accent": $accent,
-	"error": $error,
+	"primary": $primary,
+	"secondary": $secondary,
+	"success": $success,
+	"danger": $danger,
 	"warning": $warning,
 	"info": $info,
-	"success": $success,
 	"light": $light,
 	"dark": $dark
 );

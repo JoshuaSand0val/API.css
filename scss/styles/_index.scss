@@ -66,6 +66,6 @@
 
 :where(a[href]) {
 	@include color-schemes using ($bg) {
-		color: color-contrast($accent, $bg);
+		color: color-contrast($primary, $bg);
 	}
 }
