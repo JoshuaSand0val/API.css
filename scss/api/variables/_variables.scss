@@ -134,5 +134,5 @@ $safe: $safe-top $safe-right $safe-bottom $safe-left;
 $safe-x: 0 $safe-right 0 $safe-left;
 $safe-y: $safe-top 0 $safe-bottom 0;
 
-$safe-header: $safe-top $safe-right 0 $safe-left;
-$safe-footer: 0 $safe-right $safe-bottom $safe-left;
+$safe-start: $safe-top $safe-right 0 $safe-left;
+$safe-end: 0 $safe-right $safe-bottom $safe-left;
