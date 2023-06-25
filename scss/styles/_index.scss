@@ -11,9 +11,9 @@
 :where(body) {
 	color-scheme: $color-schemes;
 	font-size: size(0em);
-	font-family: $font;
+	font-family: $sans-serif;
 	font-weight: $weight;
-	line-height: $line-height;
+	line-height: $leading;
 	word-break: break-word;
 	margin: 0;
 	@include color-schemes using ($bg) {
@@ -26,9 +26,9 @@
 }
 
 :where(h1, h2, h3, h4, h5, h6) {
-	font-family: $font-heading;
-	font-weight: $weight-bold;
-	line-height: $line-height-heading;
+	font-family: $display;
+	font-weight: $bold;
+	line-height: $leading-display;
 	margin: size(-1rem) 0;
 }
 
@@ -57,11 +57,11 @@
 }
 
 :where(b, strong) {
-	font-weight: $weight-bold;
+	font-weight: $bold;
 }
 
 :where(code, samp, pre, kbd) {
-	font-family: $font-mono;
+	font-family: $monospace;
 }
 
 :where(a[href]) {

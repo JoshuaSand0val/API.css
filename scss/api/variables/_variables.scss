@@ -66,22 +66,22 @@ $AA-gui: 3;
 $AA-ui: $AA-gui;
 
 // Font Family:
-$font: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+$sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
 helvetica neue, helvetica, Cantarell, Ubuntu, roboto,
 noto, arial, sans-serif !default;
-$font-heading: $font !default;
-$font-mono: Menlo, Consolas, Monaco, Liberation Mono,
+$display: $sans-serif !default;
+$monospace: Menlo, Consolas, Monaco, Liberation Mono,
 Lucida Console, monospace !default;
 
 // Font Weight:
 $weight: 400 !default;
-$weight-thin: 200 !default;
-$weight-bold: 600 !default;
-$weight-heavy: 800 !default;
+$thin: 200 !default;
+$bold: 600 !default;
+$heavy: 800 !default;
 
 // Line Height:
-$line-height: 1.5 !default;
-$line-height-heading: 1.33 !default;
+$leading: 1.5 !default;
+$leading-display: 1.33;
 
 // Container Pixel Width:
 $xs: 180.5px !default;
